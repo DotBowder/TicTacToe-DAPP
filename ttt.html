@@ -1,0 +1,90 @@
+<html>
+  <head>
+  </head>
+  <body class="container">
+    <h4>TicTacToe</h4>
+    <hr />
+    <h4>Create New Game</h4>
+    <div>
+      <input type="text" id="player2_id" placeholder="player 2 id..."><br />
+      <input type="number" id="starting_tile" placeholder="enter starting tile...">
+      <button id="initiate_contract">Create</button>
+      <!-- Add Code here to initiate New Contract -->
+      <br />
+    </div>
+    <hr />
+
+
+    <h4>Continue Playing</h4>
+    <div>
+      Tile Numbers:
+      <table>
+        <tr>
+          <td>0</td><td>1</td><td>2</td>
+        </tr>
+        <tr>
+          <td>3</td><td>4</td><td>5</td>
+        </tr>
+        <tr>
+          <td>6</td><td>7</td><td>8</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      Current Game:
+      <table>
+        <tr>
+          <td><em id="tile_0">Loading..</em><br /></td><td><em id="tile_1">Loading..</em><br /></td><td><em id="tile_2">Loading..</em><br /></td>
+        </tr>
+        <tr>
+          <td><em id="tile_3">Loading..</em><br /></td><td><em id="tile_4">Loading..</em><br /></td><td><em id="tile_5">Loading..</em><br /></td>
+        </tr>
+        <tr>
+          <td><em id="tile_6">Loading..</em><br /></td><td><em id="tile_7">Loading..</em><br /></td><td><em id="tile_8">Loading..</em><br /></td>
+        </tr>
+      </table>
+    </div>
+
+    <br />
+    <input type="number" id="tile_num" placeholder="enter tile number...">
+    <button id="submit_tile">Submit</button>
+    <hr />
+
+
+    <br />
+    <br />
+
+    <div id="response"></div>
+
+
+
+    <script type="text/javascript" src="ethereumjs-testrpc.js"></script>
+    <script type="text/javascript" src="ethjs.js"></script>
+    <script type="text/javascript">
+      var eth = new Eth(TestRPC.provider());
+
+      // Need to Initiate account/wallet per web-session.
+
+
+      // Need to Querry solidity contract for tiles and set variables here.
+      var t0 = 'X';
+      var t1 = 'X';
+      var t2 = 'X';
+      var t3 = 'X';
+      var t4 = 'X';
+      var t5 = 'X';
+      var t6 = 'X';
+      var t7 = 'X';
+      var t8 = 'X';
+
+      document.getElementById('tile_0').innerHTML = t0;
+      document.getElementById('tile_1').innerHTML = t1;
+      document.getElementById('tile_2').innerHTML = t2;
+      document.getElementById('tile_3').innerHTML = t3;
+      document.getElementById('tile_4').innerHTML = t4;
+      document.getElementById('tile_5').innerHTML = t5;
+      document.getElementById('tile_6').innerHTML = t6;
+      document.getElementById('tile_7').innerHTML = t7;
+      document.getElementById('tile_8').innerHTML = t8;
+
+    </script>
