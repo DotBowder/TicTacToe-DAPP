@@ -1,5 +1,9 @@
 # TicTacToe-DAPP
 
+Additional Requirements:
+ganache-cli
+ethjs.js & ethereumjs-testrpc.js from (https://github.com/san-lee-ai/simple_auction)
+(and others tbd...?)
 
 Goals:
 Create a simple tictactoe game. 
